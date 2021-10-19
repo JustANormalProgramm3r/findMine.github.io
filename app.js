@@ -2,6 +2,7 @@ const form = document.querySelector('#form');
 const timer = document.querySelector('#timer');
 const tbody = document.querySelector('#table tbody');
 const result = document.querySelector('#result');
+const replay = document.querySelector('.replay');
 
 let row;
 let cell;
@@ -234,6 +235,9 @@ function drawTable(){
     });
 }
 
+replay.addEventListener('click',()=>{
+    location.reload();
+})
 
 
 
